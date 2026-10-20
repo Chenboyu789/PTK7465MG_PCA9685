@@ -1,0 +1,13 @@
+menu "Servo motion test"
+    config SERVO_MOTION_TIME_MS
+        int "S-curve travel time per direction (ms)"
+        range 100 60000
+        default 2000
+        help
+            All channels share the travel time with quintic S-curve interpolation.
+
+    config SERVO_HOLD_TIME_MS
+        int "Hold time at each endpoint (ms)"
+        range 0 60000
+        default 2000
+endmenu

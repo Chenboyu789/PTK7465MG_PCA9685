@@ -1,0 +1,3 @@
+#pragma once
+#define CONFIG_SERVO_MOTION_TIME_MS 2000
+#define CONFIG_SERVO_HOLD_TIME_MS 2000

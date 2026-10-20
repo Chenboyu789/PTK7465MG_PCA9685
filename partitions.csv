@@ -1,0 +1,6 @@
+# 16 MB flash. Partition table at 0x8000. No OTA slots in this baseline.
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x9000,   0x6000,
+phy_init, data, phy,     0xF000,   0x1000,
+factory,  app,  factory, 0x10000,  0x400000,
+# 0x410000..0xFFFFFF is unallocated; add partitions when storage needs are known.
